@@ -3,19 +3,19 @@ const a=tab.length;
 
 for (let i=0; i<a; i++){
 
-if (typeof (tab[i])==String){
+if (typeof (tab[i])===String){
 console.log("foo");
 }
 
-if (typeof tab[i]==Number){
+if (typeof tab[i]===Number){
     console.log("bar");
 }
-if (typeof tab[i]!==String || Number){
+if (typeof tab[i]!==String || typeof tab[i]!==Number){
     console.log("boo");
 }
 
 }
 
 }
-const tabTest = ["maciek", 123, "un i uona", asd43, true]
-fooboo(tabTest)
+const tabTest = [12, "maciek", 123, "un i uona", 3, true, 12, null];
+fooboo(tabTest);
