@@ -3,14 +3,14 @@ const a=tab.length;
 
 for (let i=0; i<a; i++){
 
-if (typeof (tab[i])===String){
+if (typeof (tab[i])==='string'){
 console.log("foo");
 }
 
-if (typeof tab[i]===Number){
+if (typeof tab[i]==='number'){
     console.log("bar");
 }
-if (typeof tab[i]!==String || typeof tab[i]!==Number){
+if (typeof tab[i]!=='string' && typeof tab[i]!=='number'){
     console.log("boo");
 }
 
